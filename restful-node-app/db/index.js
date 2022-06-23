@@ -8,6 +8,5 @@ const pool = new pg.Pool({
   port: process.env.PGPORT,
   ssl: { rejectUnauthorized: false },
 });
-export async function query(text, params, callback) {
-    return pool.query(text, params, callback);
-}
+
+export default pool

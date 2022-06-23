@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "nodemon -r dotenv/config./bin/www.js",
-    "createTable": "node -r dotenv/config db/scripts/createFeelGoodQuotesTable.js"
+    "createTable": "node -r dotenv/config db/scripts/createFeelGoodQuotesTable.js",
+    "populateTable": "node -r dotenv/config db/scripts/populateQuotesTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
