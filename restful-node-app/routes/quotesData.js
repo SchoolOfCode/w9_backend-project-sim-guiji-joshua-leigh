@@ -2,7 +2,7 @@ import express from "express";
 
 const router = express.Router();
 
-import { getData } from "../models/quotesFunctions";
+import { getData } from "../models/quotesFunctions.js";
 
 /* GET quotesData. */
 router.get("/", async function (req, res, next) {
@@ -11,4 +11,4 @@ router.get("/", async function (req, res, next) {
   res.json(responseObject);
 });
 
-export {router};
+export default router;
